@@ -1,0 +1,18 @@
+# =====================================================================
+# Configuración de seguridad para MongoDB local (Windows)
+#
+# NO reemplace su archivo completo con este. Abra su mongod.cfg real:
+#   C:\Program Files\MongoDB\Server\<versión>\bin\mongod.cfg
+# (Bloc de notas o VS Code "como administrador") y asegúrese de que
+# estas dos secciones queden así. Respete la sangría: YAML usa espacios,
+# nunca tabulaciones.
+# =====================================================================
+
+# Solo acepta conexiones desde esta misma computadora.
+net:
+  port: 27017
+  bindIp: 127.0.0.1
+
+# Exige usuario y contraseña para cualquier operación.
+security:
+  authorization: enabled

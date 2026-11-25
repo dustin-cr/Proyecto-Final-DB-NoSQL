@@ -1,0 +1,30 @@
+# Credenciales: nunca se suben al repositorio
+.env
+.env.*
+!.env.example
+
+# Respaldos de la base de datos (contienen datos reales)
+backups/
+*.archive
+*.gz
+
+# Datos originales de Google Takeout (contienen nombres de clientes)
+resenas/
+datos/
+takeout*/
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Editor / sistema
+.vscode/
+.DS_Store
+Thumbs.db
