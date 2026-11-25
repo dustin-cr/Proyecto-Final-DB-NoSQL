@@ -1,17 +1,17 @@
 // =====================================================================
 // 03_crear_roles_usuarios.js
-// Crea roles con el MÍNIMO de permisos necesarios (principio de menor
+// Crea roles con el minimo de permisos necesarios (principio de menor
 // privilegio) y un usuario de base de datos para cada componente:
 //
-//   api_resenas    -> la API en Node.js
-//   nlp_resenas    -> los scripts de Python (carga y análisis NLP)
-//   lector_resenas -> consultas y demostraciones (solo lectura, sin datos personales)
+//   api_resenas    --- la API en Node.js
+//   nlp_resenas    --- los scripts de Python para carga y análisis NLP
+//   lector_resenas --- consultas y demostraciones solo para lectura
 //
-// Se ejecuta con el usuario administrador:
-//   mongosh "mongodb://127.0.0.1:27017/?authSource=admin" -u adminProyecto -p --file database/03_crear_roles_usuarios.js
+// Se ejecuta desde usuario administrador:
+//   mongosh "mongodb://127.0.0.1:27017/?authSource=admin" -u adminProyecto -p 
 //
 // Las contraseñas se piden por teclado y nunca quedan en este archivo.
-// Es seguro ejecutarlo varias veces: actualiza los roles y omite los
+// Se puede  ejecutarlo varias vecessi es necesario, actualiza los roles y omite los
 // usuarios que ya existen.
 // =====================================================================
 

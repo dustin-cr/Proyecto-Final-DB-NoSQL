@@ -1,24 +1,23 @@
 // =====================================================================
 // 04_cargar_catalogos.js
 // Carga los catálogos que usa el análisis NLP:
-//   - temas (problemas o aspectos que mencionan los clientes)
-//   - palabras_clave (términos que indican cada tema)
-//   - recomendaciones (acción sugerida para cada tema)
-//   - categorias_negocio (y asigna la categoría a cada negocio)
+//   - temas / problemas o aspectos que mencionan los clientes
+//   - palabras_clave / términos que indican cada tema
+//   - recomendaciones / acción sugerida para cada tema 
+//   - categorias_negocio / y asigna la categoría a cada negocio
 //
 // Los catálogos los administra el administrador (o la API), no Python:
-// por eso este script se ejecuta con adminProyecto.
+// por eso este script se ejecuta desde el adminProyecto.
 //
 //   mongosh "mongodb://127.0.0.1:27017/?authSource=admin" -u adminProyecto -p
-//   (y se pega este archivo completo)
 //
-// Es seguro ejecutarlo varias veces: actualiza lo existente sin duplicar.
+// se puede  ejecutar varias veces, actualiza lo existente sin duplicar.
 //
 // Palabras clave: se escriben en minúscula y SIN tildes.
-//   "rapido"     -> coincide solo con la palabra exacta "rapido"
-//   "rapid*"     -> coincide con cualquier palabra que empiece así
+//   "rapido"     --- coincide solo con la palabra exacta "rapido"
+//   "rapid*"     --- coincide con cualquier palabra que empiece así
 //                   (rapido, rapida, rapidez, rapidos...)
-//   "a tiempo"   -> también se permiten frases
+//   "a tiempo"   --- también se permiten frases
 // =====================================================================
 
 (() => {

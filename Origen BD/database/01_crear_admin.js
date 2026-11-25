@@ -2,13 +2,10 @@
 // 01_crear_admin.js
 // Crea el usuario administrador del proyecto.
 //
-// Se ejecuta UNA sola vez, ANTES de activar la autenticación en
+// Se ejecuta una sola vez, antes de activar la autenticación en
 // mongod.cfg.
 //
-// Uso (desde la carpeta del proyecto):
-//   mongosh --file database/01_crear_admin.js
-//
-// La contraseña se pide por teclado: nunca se escribe en este archivo.
+// La contraseña se pide por teclado no se escribe en este archivo.
 // =====================================================================
 
 (() => {

@@ -1,12 +1,11 @@
 // =====================================================================
 // 02_crear_colecciones.js
-// Crea la base "resenas_nlp" con sus 14 colecciones, la validación de
+// Crea la base "resenas_nlp" y 14 colecciones, la validación de
 // esquema ($jsonSchema) de cada una y sus índices.
 //
-// Se ejecuta con el usuario administrador, ya con la autenticación activa:
-//   mongosh "mongodb://127.0.0.1:27017/?authSource=admin" -u adminProyecto -p --file database/02_crear_colecciones.js
-//
-// Es seguro ejecutarlo varias veces: si una colección ya existe, solo se
+// Se ejecuta desde usuario administrador, ya con la autenticación activa:
+//   mongosh "mongodb://127.0.0.1:27017/?authSource=admin" -u adminProyecto -p 
+//si es necesario puede ejecutarse varias veces, si una colección ya existe, solo se
 // actualiza su validador y se aseguran sus índices.
 // =====================================================================
 
